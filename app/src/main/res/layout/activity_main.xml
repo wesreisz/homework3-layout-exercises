@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wesleyreisz.layoutexamples.MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:id="@+id/centeredRock"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="fireRock"
+        android:src="@drawable/rock" />
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:id="@+id/oneUpPaper"
+        android:layout_above="@id/centeredRock"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:onClick="firePaper"
+        android:src="@drawable/paper" />
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_above="@id/oneUpPaper"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:onClick="fireLizard"
+        android:src="@drawable/lizard" />
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:id="@+id/oneDownPaper"
+        android:onClick="firePaper"
+        android:layout_below="@id/centeredRock"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/paper" />
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_below="@id/oneDownPaper"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:id="@+id/btnSpock"
+        android:onClick="fireSpock"
+        android:src="@drawable/spock" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/centeredRock"
+        android:onClick="fireLizard"
+        android:src="@drawable/lizard" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@id/oneUpPaper"
+        android:layout_toLeftOf="@id/oneUpPaper"
+        android:onClick="fireScissors"
+        android:src="@drawable/scissors" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@id/oneDownPaper"
+        android:layout_toRightOf="@id/oneDownPaper"
+        android:onClick="fireRock"
+        android:src="@drawable/rock" />
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@id/oneUpPaper"
+        android:layout_toRightOf="@id/oneUpPaper"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:onClick="fireScissors"
+        android:src="@drawable/scissors" />
+
+</RelativeLayout>
