@@ -69,9 +69,8 @@
             android:gravity="right"
             android:text="State:" />
 
-        <EditText
-            android:id="@+id/txtState"
-            android:hint="Enter Your State"
+        <Spinner
+            android:id="@+id/spinnerState"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.75"
